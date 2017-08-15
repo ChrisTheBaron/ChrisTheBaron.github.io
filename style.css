@@ -6,7 +6,7 @@ body {
     justify-content: center;
     align-items: center;
 
-    height: 100vh;
+    padding-top: 25vh;
 
     font-family: 'Raleway', sans-serif;
 
@@ -52,24 +52,22 @@ a, a:hover, a:visited, a:active, a:link, a:focus {
 
 @media (max-height: 720px) {
 
+    body {
+        padding-top: 5vw;
+    }
+
     #box {
-
-        height: 90vh;
-
+        height: calc(100vh - 10vw);
     }
 
 }
 
 .logos {
-
     font-size: 25pt;
-
 }
 
 .npm {
-
     height: 20pt;
     width: 20pt;
     margin-bottom: 3px;
-
 }
