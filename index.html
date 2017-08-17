@@ -5,13 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="Electronic Engineer and hobbyist Software Engineer.">
+    <meta name="description" content="Electronic Engineer, Software Developer, Avid Cyclist.">
     <meta name="author" content="Chris Taylor">
 
     <title>Chris Taylor</title>
 
-    <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:200,500" rel="stylesheet">
@@ -36,7 +34,7 @@
         <hr>
 
         <p>
-            Electronic Engineer, Software Developer.
+            Electronic Engineer, Software Developer, Avid Cyclist.
             <br>
             <small>
                 <u>
@@ -63,11 +61,55 @@
                 <img class="npm" alt="npm" src="npm.png">
             </a>
 
+            <a target="_blank" href="https://www.strava.com/athletes/christhebaron" aria-label="Strava">
+                <i class="fa fa-bicycle" aria-hidden="true" title="Strava"></i>
+            </a>
+
         </div>
 
     </div>
 
 </div>
+
+<script>
+
+    function updateHeight() {
+
+        var visibleHeight = window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight;
+        var visibleWidth = window.innerWidth || document.body.clientTop || document.documentElement.clientWidth;
+
+        var boxHeight;
+        var boxMargin;
+        var boxWidth;
+
+        if (visibleHeight < 720) {
+            boxHeight = visibleHeight * 0.6;
+            boxMargin = visibleHeight * 0.2;
+        } else {
+            boxHeight = visibleHeight * 0.5;
+            boxMargin = visibleHeight * 0.25;
+        }
+
+        var style = document.getElementById('box').style;
+        style.height = boxHeight + "px";
+        style.marginTop = boxMargin + "px";
+
+        if (visibleWidth < 720) {
+            boxWidth = visibleWidth * 0.9;
+        } else {
+            boxWidth = visibleWidth * 0.5;
+        }
+
+        document.getElementById('box').style.width = boxWidth + "px";
+
+    }
+
+    updateHeight();
+
+    window.addEventListener("orientationchange", updateHeight);
+    window.addEventListener('resize', updateHeight);
+
+</script>
 
 </body>
 </html>
