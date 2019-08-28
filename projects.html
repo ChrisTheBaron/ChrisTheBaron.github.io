@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Projects by Chris Taylor">
+    <meta name="author" content="Chris Taylor">
+
+    <title>Projects</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200,500" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+          integrity="sha384-rtJEYb85SiYWgfpCr0jn174XgJTn4rptSOQsMroFBPQSGLdOC5IbubP6lJ35qoM9" crossorigin="anonymous">
+
+    <link href="projects.css" rel="stylesheet">
+
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "//matomo.christhebaron.co.uk/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = u + 'matomo.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+
+</head>
+
+<body>
+
+<br>
+
+<div class="container-fluid">
+
+    <div id="box">
+
+        <div id="box-inner">
+
+            <a href="index.html"><i class="fas fa-caret-square-left"></i>&nbsp;Home</a>
+
+            <h1>
+                <u>Projects</u>
+            </h1>
+
+            <ul>
+                <li><a href="#drumsmith">Drumsmith</a></li>
+                <li><a href="#kot">Keep-on-Time</a></li>
+                <li><a href="#pegasus">BEng Final Project</a></li>
+                <li><a href="#strava">Strava to Calendar</a></li>
+                <li><a href="#stopwatch">Axosoft Stopwatch</a></li>
+            </ul>
+
+            <section>
+
+                <h2 id="drumsmith">
+                    Drumsmith <small>(<time datetime="2018-06">June 2019</time> - Present)</small>
+                </h2>
+
+                <p>
+                    <a target="_blank" href="https://gitlab.christhebaron.co.uk/ChrisTheBaron/drumsmith"> Sources
+                        <i
+                                class="fas fa-external-link-alt"></i></a> &bullet; <a title="License for Drumsmith" target="_blank"
+                                                                                      href="https://gitlab.christhebaron.co.uk/ChrisTheBaron/drumsmith/blob/master/LICENSE">
+                    <i class="fas fa-file-signature"></i>MIT</a>
+                </p>
+
+                <p>
+
+                    Built as a homage to games such as <a target="_blank" href="https://rocksmith.ubisoft.com">Rocksmith&reg;</a>
+                    and
+                    <a target="_blank" href="https://www.guitarhero.com">Guitar Hero</a>, Drumsmith is designed as a
+                    learning tool for drums. It is very much a work in progress.
+
+                </p>
+
+                <p>
+                    Technologies Used:
+                </p>
+                <ul>
+                    <li>C++</li>
+                    <li><a target="_blank" href="https://www.sfml-dev.org/">SFML</a></li>
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h2 id="kot">
+                    Keep-on-Time
+                    <small>(<time datetime="2018-06">July 2018</time> - <time datetime="2019-03">March 2019</time>)</small>
+                </h2>
+
+                <p>
+<!--                    <a target="_blank" href="http://planmatic.pro">Demo <i-->
+<!--                            class="fas fa-external-link-alt"></i></a>-->
+<!--                    &bullet;-->
+                    <a target="_blank" href="https://gitlab.christhebaron.co.uk/keepontime"> Sources <i
+                            class="fas fa-external-link-alt"></i></a> &bullet; <a target="_blank"
+                                                                                 href="https://gitlab.christhebaron.co.uk/keepontime/keep-on-time-api/blob/master/LICENSE">
+                    <i class="fas fa-file-signature" title="License"></i>MIT</a>
+                </p>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-6">
+                            <a target="_blank" href="images/keepontime/recording.gif"><img
+                                    class="img-fluid img-thumbnail"
+                                    src="images/keepontime/recording.gif"></a>
+
+                        </div>
+                        <div class="col-4">
+                            <a target="_blank" href="images/keepontime/dashboard.png"><img
+                                    class="img-fluid img-thumbnail"
+                                    src="images/keepontime/dashboard.png"></a>
+
+                        </div>
+                        <div class="col-4">
+                            <a target="_blank" href="images/keepontime/plan.png"><img class="img-fluid img-thumbnail"
+                                                                                      src="images/keepontime/plan.png"></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <p>
+                    Keep-on-Time is an application I developed in the summer before my PGCE. I intended it to help me
+                    keep time during my lessons but it could be applied to any tasks that are time critical. The project
+                    is split into an <a target="_blank"
+                                        href="https://gitlab.christhebaron.co.uk/keepontime/keep-on-time-api">API</a>
+                    and a <a target="_blank" href="https://gitlab.christhebaron.co.uk/keepontime/keep-on-time-web">frontend
+                    application</a>. I also developed an <a target="_blank"
+                                                            href="https://gitlab.christhebaron.co.uk/keepontime/Keep-on-Time-Fitbit">application</a>
+                    for my Fitbit watch to use the system when away from my PC. I stopped developing Keep-on-Time when I
+                    realised my teaching needed to be a lot more flexible than it allowed, but the groundwork is in
+                    place to add any more features.
+                </p>
+
+                <p>
+                    Technologies Used:
+                </p>
+                <ul>
+                    <li>Typescript</li>
+                    <li>MongoDB</li>
+                    <li>Google Login</li>
+                    <li>Websockets</li>
+                    <li>NodeJS</li>
+                    <li><a target="_blank" href="https://jwt.io/"><abbr title="JSON Web Tokens">JWT</abbr></a></li>
+                </ul>
+
+                <p>
+                    TODO:
+                </p>
+
+                <ul>
+                    <li>Export plans in iCalendar format</li>
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h2 id="pegasus">
+                    BEng Final Project <small>(<time datetime="2017-12">Dec 2017</time> - <time datetime="2018-05">May 2018</time>)</small>
+                </h2>
+
+                <p>
+                    <a target="_blank" href="static/2018_ChristopherTaylor_BEngReport.pdf"> Report <i
+                            class="fas fa-external-link-alt"></i></a>
+                </p>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/beng/start_screen.png">
+                                <img class="img-fluid img-thumbnail"
+                                     src="images/beng/start_screen.png">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/beng/main_screen_full.png">
+                                <img class="img-fluid img-thumbnail"
+                                     src="images/beng/main_screen_full.png">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/beng/macro.png">
+                                <img class="img-fluid img-thumbnail"
+                                     src="images/beng/macro.png">
+                            </a>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/beng/settings_screen.png">
+                                <img class="img-fluid img-thumbnail"
+                                     src="images/beng/settings_screen.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <p>
+
+                    Codenamed "Pegasus", this was the final project for my BEng in Electronic Engineering at the
+                    University of York. The initial proposal for the project was developed by <a
+                        href="http://www.saleie.co.uk/"><abbr
+                        title="EU Life-long Learning Programme Strategic ALignment of Electrical and Information Engineering in
+European Higher Education Institutions">SALEIE</abbr></a>. The report can be found <a target="_blank"
+                                                                                      href="static/2018_ChristopherTaylor_BEngReport.pdf">
+                    here</a>. The software package allowed the user to control various pieces of lab equipment using
+                    <abbr title="Natural Language Processing">NLP</abbr> and exported their results into an accessible
+                    PDF. For this project I developed a simple scripting language that allowed the user to run complex
+                    tests using a single voice command.
+
+                </p>
+
+                <p>
+                    Technologies Used:
+                </p>
+                <ul>
+                    <li>C#</li>
+                    <li>Windows Forms</li>
+                    <li><a target="_blank" href="https://dialogflow.com/">Dialogflow</a></li>
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h2 id="strava">
+                    Strava to Calendar <small>(<time datetime="2017-08">Aug 2017</time> - <time datetime="2017-09">Sep 2017</time>)</small>
+                </h2>
+
+                <p>
+                    <a target="_blank" href="https://gitlab.christhebaron.co.uk/ChrisTheBaron/strava-ical"> Sources <i
+                            class="fas fa-external-link-alt"></i></a> &bullet; <a target="_blank"
+                                                                                  href="https://gitlab.christhebaron.co.uk/ChrisTheBaron/strava-ical/blob/development/LICENSE">
+                    <i class="fas fa-file-signature" title="License"></i>MIT</a>
+                </p>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/strava-ical/strava-ical.gif"><img
+                                    class="img-fluid img-thumbnail"
+                                    src="images/strava-ical/strava-ical.gif"></a>
+
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/strava-ical/main.png"><img
+                                    class="img-fluid img-thumbnail"
+                                    src="images/strava-ical/main.png"></a>
+
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/strava-ical/strava.png"><img
+                                    class="img-fluid img-thumbnail"
+                                    src="images/strava-ical/strava.png"></a>
+
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/strava-ical/dashboard.png"><img
+                                    class="img-fluid img-thumbnail"
+                                    src="images/strava-ical/dashboard.png"></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <p>
+
+                    Used to keep my life organised, Strava to Calendar exports all of a users activities on <a
+                        target="_blank" href="https://www.strava.com/">Strava</a> for viewing on an iCalendar compatible
+                    calendar.
+
+                </p>
+
+                <p>
+                    Technologies Used:
+                </p>
+                <ul>
+                    <li>Golang</li>
+                    <li><a target="_blank" href="https://en.wikipedia.org/wiki/ICalendar">iCalendar</a></li>
+                    <li><a target="_blank" href="https://www.strava.com/">Strava</a></li>
+                    <li><a target="_blank" href="https://jwt.io/"><abbr title="JSON Web Tokens">JWT</abbr></a></li>
+                </ul>
+
+                <p>
+                    TODO:
+                </p>
+
+                <ul>
+                    <li>Allow filtering by activity type</li>
+                    <li>Allow customisation of calendar entry name and description</li>
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h2 id="stopwatch">
+                    Axosoft Stopwatch <small>(<time datetime="2015-01">Jan 2015</time> - <time datetime="2016-08">Aug 2016</time>)</small>
+                </h2>
+
+                <p>
+                    <a target="_blank" href="https://gitlab.christhebaron.co.uk/axosoft-stopwatch"> Sources <i
+                            class="fas fa-external-link-alt"></i></a> &bullet; <a target="_blank"
+                                                                                 href="https://gitlab.christhebaron.co.uk/axosoft-stopwatch/ontime-stopwatch/blob/development/LICENSE">
+                    <i class="fas fa-file-signature" title="License"></i>MIT</a>
+                </p>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/stopwatch/stopwatch.gif"><img
+                                    class="img-fluid img-thumbnail"
+                                    src="images/stopwatch/stopwatch.gif"></a>
+
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/stopwatch/main.png"><img class="img-fluid img-thumbnail"
+                                                                                     src="images/stopwatch/main.png"></a>
+
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/stopwatch/context.png"><img class="img-fluid img-thumbnail"
+                                                                                        src="images/stopwatch/context.png"></a>
+
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <a target="_blank" href="images/stopwatch/submit.png"><img class="img-fluid img-thumbnail"
+                                                                                       src="images/stopwatch/submit.png"></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <br>
+
+                <p>
+                    Stopwatch is a desktop client for <a href="https://www.axosoft.com">Axosoft</a>, a bug tracking
+                    system
+                    for scrum development. It was my first major project written in Java. I developed a simple website
+                    in
+                    PHP to allow users to check for updates. First developed in 2015, I used this application during my
+                    <a href="#pegasus">dissertation project</a> for my BEng.
+                </p>
+
+                <p>
+                    Technologies Used:
+                </p>
+                <ul>
+                    <li>Java</li>
+                    <li>Gradle</li>
+                    <li>PHP</li>
+                    <li><a href="https://silex.symfony.com/">Silex</a></li>
+                </ul>
+
+            </section>
+
+        </div>
+
+    </div>
+</div>
+
+<br>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
