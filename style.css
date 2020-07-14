@@ -8,8 +8,10 @@ body {
     align-items: center;
 
     font-family: 'Raleway', sans-serif;
-
-    overflow: hidden;
+    
+    min-width: 320px;
+    min-height: 350px;
+    overflow: auto;
 
 }
 
