@@ -31,127 +31,114 @@
 
     <link href="style.css" rel="stylesheet">
 
-    <!-- Matomo -->
-    <script>
-      var _paq = window._paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="//matomo.christhebaron.co.uk/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '2']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-    </script>
-    <!-- End Matomo Code -->
-
 </head>
 
 <body>
 
-<div id="box">
+    <div id="box">
 
-    <div id="box-inner" role="main">
+        <div id="box-inner" role="main">
 
-        <h1>
-            Chris Taylor
-        </h1>
+            <h1>
+                Chris Taylor
+            </h1>
 
-        <hr>
+            <hr>
 
-        <p>
-            Electronic&nbsp;Engineer, Software&nbsp;Developer, <u><a target="_blank" rel="noopener"
-                                                                     href="https://www.strava.com/athletes/christhebaron"
-                                                                     aria-label="Strava">
-            Occasional&nbsp;Cyclist</a></u>.
-            <br>
+            <p>
+                Electronic&nbsp;Engineer, Software&nbsp;Developer, <u>
+                    <a target="_blank" rel="noopener"
+                       href="https://www.strava.com/athletes/christhebaron"
+                       aria-label="Strava">
+                        Occasional&nbsp;Cyclist
+                    </a>
+                </u>.
+                <br>
+                <small>
+                    <u>
+                        <a href="mailto:cv@christhebaron.co.uk">CV&nbsp;available on&nbsp;request.</a>
+                    </u>
+                </small>
+            </p>
+
+            <div class="logos">
+
+                <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/christhebaron" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin" title="Linkedin"></i>
+                </a>
+
+                <a target="_blank" rel="noopener" href="https://github.com/ChrisTheBaron" aria-label="Github">
+                    <i class="fab fa-github-square" title="Github"></i>
+                </a>
+
+                <a href="mailto:hello@christhebaron.co.uk" aria-label="Email">
+                    <i class="fas fa-envelope-square" title="Email"></i>
+                </a>
+
+                <a target="_blank" rel="noopener" href="https://twitter.com/ChrisTheBaron" aria-label="Twitter">
+                    <i class="fab fa-twitter-square" title="Twitter"></i>
+                </a>
+
+                <a target="_blank" rel="noopener" href="https://www.npmjs.com/~christhebaron" aria-label="npm">
+                    <img class="npm" alt="npm" title="npm" src="npm.png">
+                </a>
+
+            </div>
+
+            <hr>
+
             <small>
                 <u>
-                    <a href="mailto:cv@christhebaron.co.uk">CV&nbsp;available on&nbsp;request.</a>
+                    <a href="projects">See what I'm working on.</a>
                 </u>
             </small>
-        </p>
-
-        <div class="logos">
-
-            <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/christhebaron" aria-label="LinkedIn">
-                <i class="fab fa-linkedin" title="Linkedin"></i>
-            </a>
-
-            <a target="_blank" rel="noopener" href="https://github.com/ChrisTheBaron" aria-label="Github">
-                <i class="fab fa-github-square" title="Github"></i>
-            </a>
-
-            <a href="mailto:hello@christhebaron.co.uk" aria-label="Email">
-                <i class="fas fa-envelope-square" title="Email"></i>
-            </a>
-
-            <a target="_blank" rel="noopener" href="https://twitter.com/ChrisTheBaron" aria-label="Twitter">
-                <i class="fab fa-twitter-square" title="Twitter"></i>
-            </a>
-
-            <a target="_blank" rel="noopener" href="https://www.npmjs.com/~christhebaron" aria-label="npm">
-                <img class="npm" alt="npm" title="npm" src="npm.png">
-            </a>
 
         </div>
 
-        <hr>
-
-        <small>
-            <u>
-                <a href="projects">See what I'm working on.</a>
-            </u>
-        </small>
-
     </div>
 
-</div>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script>
 
-<script>
+        function updateHeight() {
 
-    function updateHeight() {
+            const visibleHeight = window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight;
+            const visibleWidth = window.innerWidth || document.body.clientTop || document.documentElement.clientWidth;
 
-        const visibleHeight = window.innerHeight || document.body.clientHeight || document.documentElement.clientHeight;
-        const visibleWidth = window.innerWidth || document.body.clientTop || document.documentElement.clientWidth;
+            var boxHeight;
+            var boxMargin;
+            var boxWidth;
 
-        var boxHeight;
-        var boxMargin;
-        var boxWidth;
+            if (visibleHeight < 720) {
+                boxHeight = Math.max(340, visibleHeight * 0.6);
+            } else {
+                boxHeight = visibleHeight * 0.5;
+            }
 
-        if (visibleHeight < 720) {
-            boxHeight = Math.max(340, visibleHeight * 0.6);
-        } else {
-            boxHeight = visibleHeight * 0.5;
+            boxMargin = (visibleHeight - boxHeight) / 2;
+
+            if (visibleWidth < 720) {
+                boxWidth = visibleWidth * 0.9;
+            } else {
+                boxWidth = visibleWidth * 0.5;
+            }
+
+            let style = document.getElementById('box').style;
+            style.height = boxHeight + "px";
+            style.marginTop = boxMargin + "px";
+            style.width = boxWidth + "px";
+
         }
-        
-        boxMargin = (visibleHeight - boxHeight) / 2;
 
-        if (visibleWidth < 720) {
-            boxWidth = visibleWidth * 0.9;
-        } else {
-            boxWidth = visibleWidth * 0.5;
-        }
+        updateHeight();
 
-        let style = document.getElementById('box').style;
-        style.height = boxHeight + "px";
-        style.marginTop = boxMargin + "px";
-        style.width = boxWidth + "px";
+        window.addEventListener("orientationchange", updateHeight);
+        window.addEventListener('resize', updateHeight);
 
-    }
-
-    updateHeight();
-
-    window.addEventListener("orientationchange", updateHeight);
-    window.addEventListener('resize', updateHeight);
-
-</script>
+    </script>
 
 </body>
 </html>
