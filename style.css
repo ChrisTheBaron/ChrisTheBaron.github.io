@@ -31,9 +31,3 @@ a, a:hover, a:visited, a:active, a:link, a:focus {
 .logos {
     font-size: 25pt;
 }
-
-.npm {
-    height: 22pt;
-    width: 22pt;
-    margin-bottom: 8px;
-}
